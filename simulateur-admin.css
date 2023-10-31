@@ -1,0 +1,104 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+td:hover {
+  background-color: #f5f5f5;
+  cursor: text;
+}
+
+th {
+  background-color: #f0f0f0;
+  cursor: not-allowed;
+  
+}
+
+th:first-child {
+  text-align: left;
+}
+
+td:first-child {
+  background-color: #f0f0f0;
+  cursor: not-allowed;
+}
+
+td:first-child::after {
+  content: none;
+}
+
+td {
+  background-color: #fff;
+}
+
+td::after {
+  content: "%";
+  position: absolute;
+  margin-left: 5px;
+}
+
+
+.register-btn {
+  align-items: center;
+  margin: auto;
+  margin-top: 20px;
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border: 2px solid #000;
+  border-radius: 7px;
+  color: #000;
+  background: transparent;
+  z-index: 0;
+}
+
+.register-btn span {
+  position: absolute;
+  top: 60%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  transition: .2s;
+}
+
+.register-btn:hover span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: .1s;
+}
+
+
+.register-btn:hover:after {
+  top: 0;
+  left: 0;
+}
+
+.register-btn:after {
+  content: "";
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 5px;
+  left: 5px;
+  border-radius: 4px;
+  transition: 0.2s;
+  background-color: #3a86ff;
+}

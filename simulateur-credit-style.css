@@ -1,0 +1,121 @@
+h1 {text-align: center;}
+
+.choice {
+    margin-left: 15%;
+    padding: 10px 15px 10px 0px;
+}
+
+.container {
+    background-color: #fff;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.container-champs{
+    max-width: 400px;
+    margin: auto;
+}
+
+.container-button {
+    width: 80%;
+    margin: auto;
+    padding: 0;
+}
+
+label {
+    font-weight: bold;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.range-container {
+    position: relative;
+}
+
+input[type="range"] {
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+}
+.lbl{
+    position: relative;
+}
+
+#amount {
+    margin: 0px 10px 15px 15px;            
+}
+
+#step-value {
+    position: absolute;
+    top: 0px;
+    left: 34%;
+    width: 30px;
+    height: 30px;
+    background-color: #FC653C;
+    color: #000;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+#step-range {
+    background-color: white;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5)); 
+}
+
+#step-range::-webkit-slider-thumb {
+    cursor: grabbing;
+    background-color: #FC653C;
+    border: #FC653C;
+}
+
+#step-range::-webkit-slider-thumb:hover {
+    cursor: grab;
+}
+
+#step-range::-webkit-slider-thumb:active {
+    cursor: grabbing;
+}
+
+.container-button {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;   
+    margin-bottom: 10px;         
+}
+
+.card {
+    cursor: pointer;
+    min-width: 200px;
+    max-height: 150;
+    padding: 5px;
+    border: ridge 4px;
+    border-radius: 15px;
+    text-align: center;
+    border-color: black;
+}
+
+.card:hover {
+    border: thin;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.selected {
+    border-color: #FC653C;
+}
+
+.selected:hover {
+    border: ridge;
+    border-color: #FC653C;
+}
