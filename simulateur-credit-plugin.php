@@ -46,6 +46,10 @@ function redirection_submenu() {
 
 
 ### PRET PERSO ###
+<<<<<<< HEAD
+=======
+
+>>>>>>> f2e047c (Fix some bugs and add style)
 function simulateur_credit_pret_perso() {
     $json_file_path = plugin_dir_path(__FILE__) . 'pret_perso.json';
     $data_json = file_get_contents($json_file_path);
@@ -61,7 +65,11 @@ function simulateur_credit_pret_perso() {
     }
 
     if (isset($data) && is_array($data)) {
+<<<<<<< HEAD
         echo '<table border="2">';
+=======
+        echo '<table border="2" class="tab-sim">';
+>>>>>>> f2e047c (Fix some bugs and add style)
         echo '<tr><th></th>';
         for ($i = 6; $i <= 120; $i += 6) {
             if ($i > 48) {
@@ -89,6 +97,10 @@ function simulateur_credit_pret_perso() {
     }
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> f2e047c (Fix some bugs and add style)
 function save_pret_perso_data() {
     if (isset($_POST['data'])) {
         $json_file_path = plugin_dir_path(__FILE__) . 'pret_perso.json';
@@ -132,7 +144,11 @@ function simulateur_credit_pret_mobilite() {
     }
 
     if (isset($data) && is_array($data)) {
+<<<<<<< HEAD
         echo '<table border="2">';
+=======
+        echo '<table border="2" class="tab-sim">';
+>>>>>>> f2e047c (Fix some bugs and add style)
         echo '<tr><th></th>';
         for ($i = 6; $i <= 120; $i += 6) {
             if ($i > 48) {
@@ -205,7 +221,11 @@ function simulateur_credit_pret_voiture_neuve() {
     }
 
     if (isset($data) && is_array($data)) {
+<<<<<<< HEAD
         echo '<table border="2">';
+=======
+        echo '<table border="2" class="tab-sim">';
+>>>>>>> f2e047c (Fix some bugs and add style)
         echo '<tr><th></th>';
         for ($i = 6; $i <= 120; $i += 6) {
             if ($i > 48) {
@@ -279,7 +299,11 @@ function simulateur_credit_pret_voiture_occasion() {
     }
 
     if (isset($data) && is_array($data)) {
+<<<<<<< HEAD
         echo '<table border="2">';
+=======
+        echo '<table border="2" class="tab-sim">';
+>>>>>>> f2e047c (Fix some bugs and add style)
         echo '<tr><th></th>';
         for ($i = 6; $i <= 120; $i += 6) {
             if ($i > 48) {
@@ -352,7 +376,11 @@ function simulateur_credit_pret_moto_neuve() {
     }
 
     if (isset($data) && is_array($data)) {
+<<<<<<< HEAD
         echo '<table border="2">';
+=======
+        echo '<table border="2" class="tab-sim">';
+>>>>>>> f2e047c (Fix some bugs and add style)
         echo '<tr><th></th>';
         for ($i = 6; $i <= 120; $i += 6) {
             if ($i > 48) {
@@ -423,7 +451,11 @@ function simulateur_credit_pret_moto_occasion() {
     }
 
     if (isset($data) && is_array($data)) {
+<<<<<<< HEAD
         echo '<table border="2">';
+=======
+        echo '<table border="2" class="tab-sim">';
+>>>>>>> f2e047c (Fix some bugs and add style)
         echo '<tr><th></th>';
         for ($i = 6; $i <= 120; $i += 6) {
             if ($i > 48) {
@@ -495,7 +527,11 @@ function simulateur_credit_pret_travaux() {
     }
 
     if (isset($data) && is_array($data)) {
+<<<<<<< HEAD
         echo '<table border="2">';
+=======
+        echo '<table border="2" class="tab-sim">';
+>>>>>>> f2e047c (Fix some bugs and add style)
         echo '<tr><th></th>';
         for ($i = 6; $i <= 144; $i += 6) {
             if ($i > 48) {
@@ -569,7 +605,11 @@ function simulateur_credit_pret_energie() {
     }
 
     if (isset($data) && is_array($data)) {
+<<<<<<< HEAD
         echo '<table border="2">';
+=======
+        echo '<table border="2" class="tab-sim">';
+>>>>>>> f2e047c (Fix some bugs and add style)
         echo '<tr><th></th>';
         for ($i = 6; $i <= 144; $i += 6) {
             if ($i > 48) {
@@ -627,6 +667,7 @@ add_action('wp_ajax_nopriv_save_pret_energie_data', 'save_pret_energie_data');
 
 function simulateur_credit_content() {
     $content = '
+<<<<<<< HEAD
 
     <div class="container">
     <h1>Simulateur de crédit</h1>
@@ -679,6 +720,73 @@ function simulateur_credit_content() {
         <p>TAEG : <span id="interest-rate">X</span>%</p>
         <p>Montant total à payer au prêteur : <span id="total-repayment">0</span> €</p>
     </div>
+=======
+    <div class="container">
+        <h1>Simulateur de crédit</h1>
+        <label class="choice">Sélectionnez un type de prêt :</label>
+        <div class="container-button">
+            <div class="card selected" onclick="selectCard(this)" data-option="prêt perso">
+                <img width="50" height="50" src="https://img.icons8.com/ios/50/defend-family--v2.png" alt="defend-family--v2"class="shadow-img"/>
+                <br>Prêt perso
+            </div>
+            <div class="card" onclick="selectCard(this)" data-option="mobilité">
+                <img width="50" height="50" src="https://img.icons8.com/ios/50/kick-scooter.png" alt="yard-work"class="shadow-img"/>
+                <br>Mobilité
+            </div>
+            <div class="card" onclick="selectCard(this)" data-option="voiture neuve">
+                <img width="50" height="50" src="https://img.icons8.com/ios/50/tesla-model-3.png" alt="defend-family--v2"class="shadow-img"/>
+                <br>Voiture neuve</div>
+            <div class="card" onclick="selectCard(this)" data-option="voiture occasion">
+                <img width="50" height="50" src="https://img.icons8.com/ios/50/car--v1.png" alt="defend-family--v2"class="shadow-img"/>
+                <br>Voiture d\'occasion</div>
+            <div class="card" onclick="selectCard(this)" data-option="moto neuve">
+                <img width="50" height="50" src="https://img.icons8.com/ios/50/motorcycle.png" alt="defend-family--v2"class="shadow-img"/>
+                <br>Moto neuve</div>
+            <div class="card" onclick="selectCard(this)" data-option="moto occasion">
+                <img width="50" height="50" src="https://img.icons8.com/ios/50/scooter.png" alt="defend-family--v2"class="shadow-img"/>
+                <br>Moto d\'occasion</div>
+            <div class="card" onclick="selectCard(this)" data-option="travaux">
+                <img width="50" height="50" src="https://img.icons8.com/ios/50/yard-work.png" alt="defend-family--v2"class="shadow-img"/>
+                <br>Travaux</div>
+            <div class="card" onclick="selectCard(this)" data-option="énergie">
+                <img width="50" height="50" src="https://img.icons8.com/ios/50/solar-panel--v1.png" alt="defend-family--v2"class="shadow-img"/>
+                <br>Énergie</div>
+            </div>
+
+            <div class="container-champs">
+                <label for="montant">Montant du prêt</label>
+                <div class="input-icon">
+                    <p id="error-message" style="display:none;">Montant indisponible pour ce type de prêt</p>
+                    <i>€</i>
+                    <input type="number" id="amount" value="" placeholder="Exemple : 30 000" aria-valuemin="500" aria-valuemax="100000000">
+                </div>
+                <br>
+                <label for="step-range">Sélectionnez une durée :</label>
+                <div class="range-container">
+                    <input type="range" id="step-range" min="6" max="120" value="6">
+                    <div style="position: relative;">
+                        <div id="step-value" style="position: absolute;">6</div>
+                        <p id="step-label">Durée en mois :</p>                
+                    </div>
+                </div>
+            </div>
+
+            <h3>Résultat de votre simulation :</h3>
+            <div id="results">
+                <p><span></span>Montant emprunté : <br><span id="amount-payment">0</span> €</p>
+                <p><span></span>Durée du crédit : <br><span id="month">0</span> mois</p>
+                <p><span></span>TAEG (Taux débiteur): <br><span id="interest-rate">0</span> %</p>
+                <p><span></span>Montant total à payer au prêteur : <br><span id="total-repayment">0</span> €</p>
+                <p><span></span>Votre mensualité : <br><span id="monthly-payment">0</span> €</p>
+            </div>
+
+            <div class="legal-mention">
+                <p><u>EXEMPLE REPRESENTATIF</u> d\'un taux NON préférenciel: Nature du prêt :<b>PRET A TEMPERAMENT</b> - Montant total du prêt :
+                 19.000,00€ - Montant des mentualités <b>408,12€</b> - TAUX ANNUEL EFFECTIF GLOBAL: <b>10,99%</b> - Taux débiteur <b>FIXE</b>
+                 10,99% - Durée du prêt: <b>60 mois</b> - Montant total dû: 24 487,20€
+                </p>
+            </div>
+>>>>>>> f2e047c (Fix some bugs and add style)
         </div>
     </div>
     ';

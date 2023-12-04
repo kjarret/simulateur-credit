@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 table {
   width: 100%;
   border-collapse: collapse;
@@ -8,15 +9,33 @@ table, th, td {
 }
 
 th, td {
+=======
+.tab-sim {
+  width: min(100% - 15px);
+  min-width: 700px;
+  border-collapse: collapse;
+}
+
+.tab-sim, th, td {
+  border: 1px solid #ccc;
+}
+
+.tab-sim th, td {
+>>>>>>> f2e047c (Fix some bugs and add style)
   padding: 10px;
   text-align: center;
 }
 
+<<<<<<< HEAD
 td:hover {
+=======
+.tab-sim td:hover {
+>>>>>>> f2e047c (Fix some bugs and add style)
   background-color: #f5f5f5;
   cursor: text;
 }
 
+<<<<<<< HEAD
 th {
   background-color: #f0f0f0;
   cursor: not-allowed;
@@ -41,6 +60,32 @@ td {
 }
 
 td::after {
+=======
+.tab-sim th {
+  background-color: #f0f0f0;
+  cursor: not-allowed;  
+}
+
+.tab-sim td:first-child {
+  background-color: #f0f0f0;
+  cursor: not-allowed;
+  font-weight: bold;
+}
+
+.tab-sim th:first-child, td:first-child {
+  width: 100px;
+}
+
+.tab-sim td:first-child::after {
+  content: none;
+}
+
+.tab-sim td {
+  background-color: #fff;
+}
+
+.tab-sim td::after {
+>>>>>>> f2e047c (Fix some bugs and add style)
   content: "%";
   position: absolute;
   margin-left: 5px;
@@ -53,7 +98,10 @@ td::after {
   margin-top: 20px;
   min-width: 130px;
   height: 40px;
+<<<<<<< HEAD
   color: #fff;
+=======
+>>>>>>> f2e047c (Fix some bugs and add style)
   padding: 5px 10px;
   font-weight: bold;
   cursor: pointer;
@@ -69,11 +117,19 @@ td::after {
 }
 
 .register-btn span {
+<<<<<<< HEAD
+=======
+  width: 100%;
+>>>>>>> f2e047c (Fix some bugs and add style)
   position: absolute;
   top: 60%;
   left: 55%;
   transform: translate(-50%, -50%);
   transition: .2s;
+<<<<<<< HEAD
+=======
+  color: white;
+>>>>>>> f2e047c (Fix some bugs and add style)
 }
 
 .register-btn:hover span {
