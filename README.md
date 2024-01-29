@@ -5,7 +5,7 @@ Le plugin WordPress Simulateur Crédit permet de créer un simulateur de prêt o
 ## Installation
 
 1. Téléchargez le plugin à partir du référentiel GitHub.
-2. Extrayez le contenu dans le répertoire `/wp-content/plugins` des plugins de votre installation WordPress.
+2. Extrayez le contenu dans le répertoire `/wp-content/plugins/` des plugins de votre installation WordPress.
 3. Activez le plugin via le tableau de bord WordPress.
 
 ## Configuration
